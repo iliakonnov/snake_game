@@ -310,7 +310,7 @@
      <string>Game speed</string>
     </property>
    </widget>
-   <widget class="QFrame" name="fieWorld_frame">
+   <widget class="QFrame" name="fileWorld_frame">
     <property name="enabled">
      <bool>false</bool>
     </property>
