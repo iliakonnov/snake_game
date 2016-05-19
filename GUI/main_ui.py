@@ -1,0 +1,145 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file '/home/user/QtProjects/untitled/mainwindow.ui'
+#
+# Created by: PyQt4 UI code generator 4.11.4
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt4 import QtCore, QtGui
+
+try:
+    _fromUtf8 = QtCore.QString.fromUtf8
+except AttributeError:
+    def _fromUtf8(s):
+        return s
+
+try:
+    _encoding = QtGui.QApplication.UnicodeUTF8
+    def _translate(context, text, disambig):
+        return QtGui.QApplication.translate(context, text, disambig, _encoding)
+except AttributeError:
+    def _translate(context, text, disambig):
+        return QtGui.QApplication.translate(context, text, disambig)
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName(_fromUtf8("MainWindow"))
+        MainWindow.resize(400, 299)
+        self.centralWidget = QtGui.QWidget(MainWindow)
+        self.centralWidget.setObjectName(_fromUtf8("centralWidget"))
+        self.start_pushBtn = QtGui.QPushButton(self.centralWidget)
+        self.start_pushBtn.setGeometry(QtCore.QRect(280, 260, 99, 27))
+        self.start_pushBtn.setObjectName(_fromUtf8("start_pushBtn"))
+        self.randomWorld_frame = QtGui.QFrame(self.centralWidget)
+        self.randomWorld_frame.setGeometry(QtCore.QRect(10, 180, 381, 61))
+        self.randomWorld_frame.setFrameShape(QtGui.QFrame.NoFrame)
+        self.randomWorld_frame.setFrameShadow(QtGui.QFrame.Plain)
+        self.randomWorld_frame.setObjectName(_fromUtf8("randomWorld_frame"))
+        self.width_label = QtGui.QLabel(self.randomWorld_frame)
+        self.width_label.setGeometry(QtCore.QRect(80, 10, 51, 21))
+        self.width_label.setObjectName(_fromUtf8("width_label"))
+        self.width_spinBox = QtGui.QSpinBox(self.randomWorld_frame)
+        self.width_spinBox.setGeometry(QtCore.QRect(10, 10, 61, 21))
+        self.width_spinBox.setMinimum(1)
+        self.width_spinBox.setMaximum(1000)
+        self.width_spinBox.setProperty("value", 50)
+        self.width_spinBox.setObjectName(_fromUtf8("width_spinBox"))
+        self.height_spinBox = QtGui.QSpinBox(self.randomWorld_frame)
+        self.height_spinBox.setGeometry(QtCore.QRect(180, 10, 51, 21))
+        self.height_spinBox.setMaximum(1000)
+        self.height_spinBox.setProperty("value", 50)
+        self.height_spinBox.setObjectName(_fromUtf8("height_spinBox"))
+        self.height_label = QtGui.QLabel(self.randomWorld_frame)
+        self.height_label.setGeometry(QtCore.QRect(240, 10, 51, 21))
+        self.height_label.setObjectName(_fromUtf8("height_label"))
+        self.food_spinBox = QtGui.QSpinBox(self.randomWorld_frame)
+        self.food_spinBox.setGeometry(QtCore.QRect(10, 40, 61, 21))
+        self.food_spinBox.setMaximum(1000)
+        self.food_spinBox.setProperty("value", 5)
+        self.food_spinBox.setObjectName(_fromUtf8("food_spinBox"))
+        self.food_label = QtGui.QLabel(self.randomWorld_frame)
+        self.food_label.setGeometry(QtCore.QRect(80, 40, 41, 21))
+        self.food_label.setObjectName(_fromUtf8("food_label"))
+        self.bricks_spinBox = QtGui.QSpinBox(self.randomWorld_frame)
+        self.bricks_spinBox.setGeometry(QtCore.QRect(180, 40, 51, 21))
+        self.bricks_spinBox.setMinimum(1)
+        self.bricks_spinBox.setMaximum(1000)
+        self.bricks_spinBox.setObjectName(_fromUtf8("bricks_spinBox"))
+        self.bricks_label = QtGui.QLabel(self.randomWorld_frame)
+        self.bricks_label.setGeometry(QtCore.QRect(240, 40, 41, 21))
+        self.bricks_label.setObjectName(_fromUtf8("bricks_label"))
+        self.worldFile_radioBtn = QtGui.QRadioButton(self.centralWidget)
+        self.worldFile_radioBtn.setGeometry(QtCore.QRect(10, 70, 121, 22))
+        self.worldFile_radioBtn.setObjectName(_fromUtf8("worldFile_radioBtn"))
+        self.randomWorld_radioBtn = QtGui.QRadioButton(self.centralWidget)
+        self.randomWorld_radioBtn.setGeometry(QtCore.QRect(10, 150, 151, 22))
+        self.randomWorld_radioBtn.setChecked(True)
+        self.randomWorld_radioBtn.setAutoRepeat(False)
+        self.randomWorld_radioBtn.setObjectName(_fromUtf8("randomWorld_radioBtn"))
+        self.line = QtGui.QFrame(self.centralWidget)
+        self.line.setGeometry(QtCore.QRect(0, 240, 401, 16))
+        self.line.setFrameShape(QtGui.QFrame.HLine)
+        self.line.setFrameShadow(QtGui.QFrame.Sunken)
+        self.line.setObjectName(_fromUtf8("line"))
+        self.command_lineEd = QtGui.QLineEdit(self.centralWidget)
+        self.command_lineEd.setGeometry(QtCore.QRect(10, 260, 261, 27))
+        self.command_lineEd.setReadOnly(True)
+        self.command_lineEd.setObjectName(_fromUtf8("command_lineEd"))
+        self.pathToExe_lineEd = QtGui.QLineEdit(self.centralWidget)
+        self.pathToExe_lineEd.setGeometry(QtCore.QRect(10, 10, 251, 21))
+        self.pathToExe_lineEd.setObjectName(_fromUtf8("pathToExe_lineEd"))
+        self.pathToExe_label = QtGui.QLabel(self.centralWidget)
+        self.pathToExe_label.setGeometry(QtCore.QRect(270, 10, 111, 21))
+        self.pathToExe_label.setObjectName(_fromUtf8("pathToExe_label"))
+        self.snakeLength_spinBox = QtGui.QSpinBox(self.centralWidget)
+        self.snakeLength_spinBox.setGeometry(QtCore.QRect(10, 40, 81, 21))
+        self.snakeLength_spinBox.setMinimum(1)
+        self.snakeLength_spinBox.setMaximum(100000)
+        self.snakeLength_spinBox.setProperty("value", 1)
+        self.snakeLength_spinBox.setObjectName(_fromUtf8("snakeLength_spinBox"))
+        self.snakeLength_label = QtGui.QLabel(self.centralWidget)
+        self.snakeLength_label.setGeometry(QtCore.QRect(100, 40, 91, 21))
+        self.snakeLength_label.setObjectName(_fromUtf8("snakeLength_label"))
+        self.gameSpeed_spinBox = QtGui.QSpinBox(self.centralWidget)
+        self.gameSpeed_spinBox.setGeometry(QtCore.QRect(210, 40, 81, 21))
+        self.gameSpeed_spinBox.setMinimum(1)
+        self.gameSpeed_spinBox.setMaximum(100000)
+        self.gameSpeed_spinBox.setProperty("value", 20)
+        self.gameSpeed_spinBox.setObjectName(_fromUtf8("gameSpeed_spinBox"))
+        self.gameSpeed_label = QtGui.QLabel(self.centralWidget)
+        self.gameSpeed_label.setGeometry(QtCore.QRect(300, 40, 91, 21))
+        self.gameSpeed_label.setObjectName(_fromUtf8("gameSpeed_label"))
+        self.fileWorld_frame = QtGui.QFrame(self.centralWidget)
+        self.fileWorld_frame.setEnabled(False)
+        self.fileWorld_frame.setGeometry(QtCore.QRect(10, 100, 381, 41))
+        self.fileWorld_frame.setFrameShape(QtGui.QFrame.NoFrame)
+        self.fileWorld_frame.setFrameShadow(QtGui.QFrame.Plain)
+        self.fileWorld_frame.setObjectName(_fromUtf8("fileWorld_frame"))
+        self.worldFilename_label = QtGui.QLabel(self.fileWorld_frame)
+        self.worldFilename_label.setGeometry(QtCore.QRect(260, 10, 111, 17))
+        self.worldFilename_label.setObjectName(_fromUtf8("worldFilename_label"))
+        self.worldFilename_lineEd = QtGui.QLineEdit(self.fileWorld_frame)
+        self.worldFilename_lineEd.setGeometry(QtCore.QRect(10, 10, 241, 21))
+        self.worldFilename_lineEd.setObjectName(_fromUtf8("worldFilename_lineEd"))
+        MainWindow.setCentralWidget(self.centralWidget)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        MainWindow.setWindowTitle(_translate("MainWindow", "snake_game settings", None))
+        self.start_pushBtn.setText(_translate("MainWindow", "Start!", None))
+        self.width_label.setText(_translate("MainWindow", "Width", None))
+        self.height_label.setText(_translate("MainWindow", "Height", None))
+        self.food_label.setText(_translate("MainWindow", "Food", None))
+        self.bricks_label.setText(_translate("MainWindow", "Bricks", None))
+        self.worldFile_radioBtn.setText(_translate("MainWindow", "Use world file", None))
+        self.randomWorld_radioBtn.setText(_translate("MainWindow", "Use random world", None))
+        self.pathToExe_lineEd.setText(_translate("MainWindow", "snake_game.exe", None))
+        self.pathToExe_label.setText(_translate("MainWindow", "Path to exe file", None))
+        self.snakeLength_label.setText(_translate("MainWindow", "Snake length", None))
+        self.gameSpeed_label.setText(_translate("MainWindow", "Game speed", None))
+        self.worldFilename_label.setText(_translate("MainWindow", "World file name", None))
+        self.worldFilename_lineEd.setText(_translate("MainWindow", "world.txt", None))
+
